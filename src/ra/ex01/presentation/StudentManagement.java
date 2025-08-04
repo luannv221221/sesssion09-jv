@@ -89,6 +89,8 @@ public class StudentManagement {
         Student student = findStudentByStudentCode(studentCode);
         if (student != null){
             student.inputData(scanner);
+            // neu yeu cau chi cap nhat mỗi tuổi thì
+            // student.setAge(19);
         } else {
             System.err.println("Khong tim thay sinh vien nao co ma "+studentCode);
         }
